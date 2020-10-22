@@ -1,0 +1,48 @@
+{
+	"name": "onpremfiledataset",
+	"properties": {
+		"description": "Dataset between onprem Files and Copy pipeline",
+		"linkedServiceName": {
+			"referenceName": "OnPremToBlobSFTP",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "From OnPrem to Blob"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "SftpLocation",
+				"folderPath": "/home/ubuntu/PranjalData"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Country - RegionId",
+				"type": "String"
+			},
+			{
+				"name": "Country Name",
+				"type": "String"
+			},
+			{
+				"name": "GDP1",
+				"type": "String"
+			},
+			{
+				"name": "GDP2",
+				"type": "String"
+			},
+			{
+				"name": "GDP3",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
