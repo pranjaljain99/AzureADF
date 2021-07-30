@@ -1,0 +1,9 @@
+{
+	"name": "pranjalADF",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "76730485-3784-4b72-aacc-be96a48b1b11",
+		"tenantId": "569df091-b013-40e3-86ee-bd9cb9e25814"
+	}
+}
